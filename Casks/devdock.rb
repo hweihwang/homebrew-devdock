@@ -1,8 +1,8 @@
 cask "devdock" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.1.4"
-  sha256 arm: "4a022d532d292c80957098e0c356894cccd8932a850ed1cc714c52d7cbecf0c9", intel: "c5ca27c456b3440b765c1446dca9f3bb2e9090f4f1960874ee7caeb7c734e7cb"
+  version "0.1.5"
+  sha256 arm: "f16438a2a50cabbcb658b61c311e19c8964fe0daf4cff14531047535b4098a58", intel: "8dc3bf7752f2f2304ff275da29cbba66229b577570bbd136f5f3caa7a74f2e4a"
 
   url "https://github.com/hweihwang/devdock-releases/releases/download/v#{version}/DevDock-mac-#{arch}.dmg",
       verified: "github.com/hweihwang/devdock-releases/"
