@@ -1,6 +1,6 @@
 cask "devdock" do
-  version "0.2.0"
-  sha256 "e3035c85e25e16d0bb3ed547381b5a61c8af46b19210937833ffb0389474ac73"
+  version "0.2.1"
+  sha256 "a681209a910192fcbce7503a87f078fab8ecf42baa4bf8791636050aad2e5b4b"
 
   url "https://github.com/hweihwang/devdock-releases/releases/download/v#{version}/stable-macos-arm64-DevDock.dmg",
       verified: "github.com/hweihwang/devdock-releases/"
