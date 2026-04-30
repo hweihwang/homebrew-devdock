@@ -8,7 +8,6 @@ cask "devdock" do
   desc "Local dev control plane for multi-repo development, powered by Bun, Electrobun, Turbo, and SQLite."
   homepage "https://github.com/hweihwang/devdock-releases"
 
-  auto_updates true
   depends_on arch: :arm64
   depends_on macos: ">= :ventura"
 
