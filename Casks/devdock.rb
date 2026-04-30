@@ -1,16 +1,15 @@
 cask "devdock" do
-  arch arm: "arm64", intel: "x64"
+  version "0.2.0"
+  sha256 "e3035c85e25e16d0bb3ed547381b5a61c8af46b19210937833ffb0389474ac73"
 
-  version "0.1.5"
-  sha256 arm: "f16438a2a50cabbcb658b61c311e19c8964fe0daf4cff14531047535b4098a58", intel: "8dc3bf7752f2f2304ff275da29cbba66229b577570bbd136f5f3caa7a74f2e4a"
-
-  url "https://github.com/hweihwang/devdock-releases/releases/download/v#{version}/DevDock-mac-#{arch}.dmg",
+  url "https://github.com/hweihwang/devdock-releases/releases/download/v#{version}/stable-macos-arm64-DevDock.dmg",
       verified: "github.com/hweihwang/devdock-releases/"
   name "DevDock"
-  desc "Local dev control plane for macOS — start/stop services, detect orphan processes, resolve port conflicts, stream logs."
+  desc "Local dev control plane for multi-repo development, powered by Bun, Electrobun, Turbo, and SQLite."
   homepage "https://github.com/hweihwang/devdock-releases"
 
   auto_updates true
+  depends_on arch: :arm64
   depends_on macos: ">= :ventura"
 
   app "DevDock.app"
